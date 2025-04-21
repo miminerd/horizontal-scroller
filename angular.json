@@ -93,6 +93,39 @@
           }
         }
       }
+    },
+    "ng-horizontal-scroller": {
+      "projectType": "library",
+      "root": "projects/ng-horizontal-scroller",
+      "sourceRoot": "projects/ng-horizontal-scroller/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-horizontal-scroller/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-horizontal-scroller/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-horizontal-scroller/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ng-horizontal-scroller/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

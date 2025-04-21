@@ -1,0 +1,21 @@
+{
+  "name": "ng-horizontal-scroller",
+  "version": "0.0.8",
+  "description": "A horizontal infinite scroller component for Angular",
+  "author": "Juda Buchahda aka Miminerd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miminerd"
+  },
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "keywords": ["Angular", "horizontal", "scroller", "infinite", "carousel", "marquee", "component", "reusable", "tailwind"],
+  "license": "MIT",
+  "homepage": "https://github.com/miminerd/horizontal-scroller#readme"
+}

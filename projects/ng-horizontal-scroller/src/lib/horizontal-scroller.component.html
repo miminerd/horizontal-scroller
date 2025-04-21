@@ -1,0 +1,27 @@
+<div class="overflow-hidden whitespace-nowrap">
+  <div
+    data-testid="logo-container"
+    class="flex animate-scroll hover-pause w-max"
+    [ngStyle]="{'animation-duration': scrollSpeed}"
+  >
+    <div
+      class="flex justify-around items-center py-4 px-4 sm:px-8 space-x-4 sm:space-x-10"
+      *ngFor="let item of items.concat(items)"
+    >
+      <div class="p-6 flex flex-col">
+        <a target="_blank" [href]="item?.url">
+          <img
+            data-testid="logo-img"
+            [src]="item.thumbnail"
+            class="h-auto min-h-14 max-h-full transition-transform duration-300 hover:scale-[1.15] object-contain"
+          />
+          <span
+            *ngIf="item?.description"
+            class="text-center text-black py-2 text-sm sm:text-lg"
+            >{{ item?.description }}</span
+          >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
